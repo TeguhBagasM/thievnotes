@@ -3,10 +3,12 @@ import Quotes from "./Quotes";
 import SearchBox from "./SearchBox";
 import Text from "./Text";
 import { LogOut } from "lucide-react";
+import toast from "react-hot-toast";
 
 export default function Header({ onSearchNote, keyword, author, text }) {
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
+    toast.success("Logout Berhasil");
     window.location.href = "/";
   };
 

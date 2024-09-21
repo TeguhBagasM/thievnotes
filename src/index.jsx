@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 import "./styles/style.css";
 import "./index.css";
 import Authentication from "./components/auth/Authentication";
-import NoteApp from "./components/NoteApp"; // Pastikan path ini sesuai dengan struktur folder Anda
+import NoteApp from "./components/NoteApp";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
