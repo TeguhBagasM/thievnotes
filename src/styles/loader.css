@@ -1,0 +1,39 @@
+.loader-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 1em;
+}
+
+.loader-wrapper .lmns {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    margin: 0 auto;
+    padding: 1em;
+}
+.lmns span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2d3e50;
+    transform: translateY(-100%);
+    animation: wave 0.65s ease-in-out alternate infinite;
+}
+.lmns span:nth-of-type(1) {
+    animation-delay: -0.4s;
+}
+.lmns span:nth-of-type(2) {
+    animation-delay: -0.2s;
+}
+@keyframes wave {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}

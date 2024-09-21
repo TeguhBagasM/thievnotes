@@ -1,0 +1,55 @@
+.title-page {
+    color: #3F3F45;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.title-section {
+    color: #3F3F45;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 16px 0;
+}
+.title-note {
+    color: #3F3F45;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.paragraph {
+    color: #3F3F45;
+    font-size: 0.9rem;
+    line-height: 22px;
+}
+.text-note {
+    color: #3F3F45;
+    font-size: 0.9rem;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+.text-date {
+    color: rgb(139, 139, 139);
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+}
+.text-action, .text-filter {
+    color: #3F3F45;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all .2s;
+}
+
+.text-filter {
+    color: #fff;
+}
+
+.text-action:hover {
+    background-color: #f0f0f0;
+}
