@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route
-          path="/login"
+          path="/"
           element={
             isLoggedIn ? (
               <Navigate to="/notes" replace />
@@ -26,8 +26,8 @@ const App = () => {
             )
           }
         />
-        <Route path="/notes" element={isLoggedIn ? <NoteApp /> : <Navigate to="/login" replace />} />
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/notes" element={isLoggedIn ? <NoteApp /> : <Navigate to="/" replace />} />
+        <Route path="/" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

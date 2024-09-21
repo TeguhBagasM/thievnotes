@@ -7,7 +7,7 @@ import { LogOut } from "lucide-react";
 export default function Header({ onSearchNote, keyword, author, text }) {
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
-    window.location.href = "/login";
+    window.location.href = "/";
   };
 
   return (
