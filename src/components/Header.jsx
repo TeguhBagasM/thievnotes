@@ -12,14 +12,14 @@ export default function Header({ onSearchNote, keyword, author, text }) {
 
   return (
     <div className="header-wrapper">
-      <div className="flex md:flex-row items-center justify-center p-4 rounded-lg shadow-md">
-        <div className="flex items-center">
+      <div className="flex flex-col md:flex-row items-center justify-center p-4 rounded-lg">
+        <div className="flex flex-col md:flex-row items-center w-full md:w-auto">
           <Text type="title-page" className="text-white text-2xl md:text-4xl">
             Personal Notes
           </Text>
 
           <button
-            className="ml-4 flex items-center text-gray-900 hover:bg-gray-200 py-2 px-4 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
+            className="mt-4 md:ml-4 md:mt-0 flex items-center text-gray-900 hover:bg-gray-200 py-2 px-4 rounded-full transition-all duration-300 ease-in-out"
             onClick={handleLogout}
           >
             <LogOut className="mr-2" />
