@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { User, Mail, Lock, LogIn, UserPlus } from "lucide-react";
 
 const Authentication = ({ onLoginSuccess }) => {
@@ -7,6 +7,14 @@ const Authentication = ({ onLoginSuccess }) => {
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [error, setError] = useState("");
+
+  // Cek localStorage untuk mengetahui apakah pengguna sudah login
+  useEffect(() => {
+    const currentUser = localStorage.getItem("currentUser");
+    if (currentUser) {
+      onLoginSuccess(); // Arahkan ke halaman NoteApp jika sudah login
+    }
+  }, [onLoginSuccess]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
